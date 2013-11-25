@@ -142,9 +142,9 @@ body {
 }*/
 .VidContainer {
 	margin:10px auto;
-	width:40%;
-	height:40%;
-	max-height:340px;
+	width:50%;
+	height:50%;
+	max-height:400px;
 	border:10px solid #ffffff;
 }
 .VidWrapper {
@@ -174,16 +174,38 @@ body {
 	text-decoration: none;
 }
 .DbtnRed {
-	background: #e87162;
-	border-bottom: 8px solid #b5584c;
+	position: relative;
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #e87162;
+    padding: 10px 15px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    -webkit-box-shadow: 0px 9px 0px #b5584c;
+    -moz-box-shadow: 0px 9px 0px #b5584c;
+    box-shadow: 0px 9px 0px #b5584c;
+    margin: 10px auto 0;
+	text-align: center;
+	
+	-webkit-transition: all .01s ease;
+	-moz-transition: all .01s ease;
+	-ms-transition: all .01s ease;
+	-o-transition: all .01s ease;
+	transition: all .01s ease;
+	
+	/* background: #e87162;
+	border-bottom: 8px solid #b5584c; */
 }
-.DbtnRed:hover {
-	background: #B5584C;
-}
+
 .DbtnRed:active {
-	background: #e87162;
-	border-bottom: 8px solid #E87162;
+    -webkit-box-shadow: 0px 3px 0px rgba(219,31,5,1);
+    -moz-box-shadow: 0px 3px 0px rgba(219,31,5,1);
+    box-shadow: 0px 3px 0px rgba(219,31,5,1);
+    position: relative;
+    top: 6px;
 }
+    
 footer {
 	background: #262626;
 	height: 80px;
@@ -208,29 +230,36 @@ footer {
 	background: #A6DEF3;
 }
 .rightContent {
-	width:49.7%;
+	width:50%;
 	height:100%;
 	/*background: #e87162;*/
 	float:right;
 }
 .leftContent {
-	width:49.7%;
+	width:50%;
 	height:100%;
 	/*background: #91d6d5;*/
 	float:left;
 }
-.BuyerContent,.CSContent {
-	margin:40px auto 10px auto;
-	max-width: 450px;
+.BuyerContent{
+	margin:75px auto 0 10%;
+	max-width: 400px;
+}
+
+.CSContent {
+	margin:75px 10% 0 auto;
+	max-width: 400px;
 }
 
 .BuyerContent h1, .CSContent h1 {
-	margin: 0 0 20px 0;
-	color:#FFFFFF;
-	text-align: center;
+	margin: 0 0 0px 0;
+color: #FFFFFF;
+text-align: center;
+font-size: 1.5em;
 }
 .headTitle {
 	position: relative;
+	margin-top: -10px;
 }
 .Title {
 	width:180px;
@@ -246,34 +275,34 @@ footer {
 	line-height: 42px;
 } 
 .SmileyFace {
-	width:138px;
-	height:138px;
-	background: url('../img/assets.png') no-repeat -50px -168px; 
-	position: absolute;
-	top:-114px;
-	left:156px;
+width: 138px;
+height: 138px;
+background: url('../img/assets.png') no-repeat -40px -168px;
+position: absolute;
+top: -114px;
+left: 117px;
 }
 .DokkanaIcon {
-	width:136px;
-	height:114px;
-	background: url('../img/assets.png') no-repeat -50px -368px; 
-	position: absolute;
-	top:-108px;
-	left:156px;
+width: 126px;
+height: 114px;
+background: url('../img/assets.png') no-repeat -62px -355px;
+position: absolute;
+top: -108px;
+left: 145px;
 }
 .leftCurve {
-	width: 42px;
-	height: 46px;
-	position: absolute;
-	left:106px;
-	top:-10px;
+width: 42px;
+height: 46px;
+position: absolute;
+left: 80px;
+top: -10px;
 }
 .rightCurve {
-	width: 42px;
-	height: 46px;
-	position: absolute;
-	right:106px;
-	top:-10px;
+width: 42px;
+height: 46px;
+position: absolute;
+right: 79px;
+top: -10px;
 }
 .leftCurve .triContainer {
 	float:left;
@@ -325,28 +354,28 @@ border-color: transparent transparent transparent #de7323;
 
 }
 .topLeftShadow {
-	width: 0px;
+width: 0px;
 height: 0px;
 border-style: solid;
 border-width: 0 0 10px 14px;
 border-color: transparent transparent #b9601c transparent;
 position: absolute;
-top:-10px;
-left:134px;
+top: -10px;
+left: 109px;
 }
 .topRightShadow {
-	width: 0px;
+width: 0px;
 height: 0px;
 border-style: solid;
 border-width: 10px 0 0 14px;
 border-color: transparent transparent transparent #b9601c;
-position:absolute;
-top:-10px;
-right:134px;
+position: absolute;
+top: -10px;
+right: 108px;
 }
 
 .CSFeatures, .BuyerFeatures {
-	min-height: 200px;
+	min-height: 190px;
 	width: 100%;
 	border-radius:15px;
 	margin-top:-43px;
@@ -358,26 +387,44 @@ right:134px;
 	background: url('../img/ListStyle.png') repeat-y right top;
 	list-style-position: inside;
 	list-style: none;
-	margin-right: 15px;
+	margin: 0 10px 0 0;
 	
 }
 .CSFeatures ul li, .BuyerFeatures ul li {
-	color: #44B7E5;
-    font-size: 22px;
-    font-weight: 100;
-    line-height: 58px;
-    padding-right: 20px;
+color: #666;
+font-size: 1.2em;
+font-weight: 100;
+line-height: 60px;
+padding-right: 20px;
 }
-.DbtnBuyer {
-	background: #FFFFFF;
-	color:#B5584C;
-	border-bottom: 8px solid #b5584c;
+.DbtnBuyer , .DbtnCS{
+position: relative;
+color: #ffffff;
+text-decoration: none;
+background-color: #e87162;
+padding: 10px 15px;
+-webkit-border-radius: 8px;
+-moz-border-radius: 8px;
+border-radius: 8px;
+-webkit-box-shadow: 0px 9px 0px #b5584c;
+-moz-box-shadow: 0px 9px 0px #b5584c;
+box-shadow: 0px 9px 0px #b5584c;
+margin: 22px auto 0;
+text-align: center;
+-webkit-transition: all .01s ease;
+-moz-transition: all .01s ease;
+-ms-transition: all .01s ease;
+-o-transition: all .01s ease;
+transition: all .01s ease;
+font-size: 1.3em;
 }
-.DbtnCS {
-	background: #FFFFFF;
-	color:#5f8988;
-	border-bottom: 8px solid #5f8988;
-}
+ .DbtnBuyer:active , .DbtnCS:active{
+ 	  -webkit-box-shadow: 0px 3px 0px rgba(219,31,5,1);
+    -moz-box-shadow: 0px 3px 0px rgba(219,31,5,1);
+    box-shadow: 0px 3px 0px rgba(219,31,5,1);
+    position: relative;
+    top: 6px;
+ }
 #BuyerSelect, #CSSelect {
 	position: absolute;
 	top:0;

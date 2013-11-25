@@ -111,6 +111,7 @@
 						<div class="DokkanaIcon"></div>
 						<div class="leftCurve">
 							<div class="rectangle"></div>
+							
 							<div class="triContainer">
 								<div class="topTri"></div>
 								<div class="bottomTri"></div>
@@ -152,9 +153,13 @@
 			<div class="logo">
 				<a href="#" class="LogoImg">الدكانه</a>
 			</div>
+			buyer
 		</div>
 		<div id="CSSelect">
-			
+			<div class="logo">
+				<a href="#" class="LogoImg">الدكانه</a>
+			</div>
+			CS
 		</div>
 
 		<footer>
@@ -187,8 +192,10 @@
 				$(window).load(function() {
 					 // makes sure the whole site is loaded
 					//$('#preloader-page').delay(100000);
-					$('.loader').delay(5500).fadeOut(); // will first fade out the loading animation
-					$('#preloader-page').delay(5800).fadeOut('slow'); // will fade out the white DIV that covers the website.
+					//$('.loader').delay(5500).fadeOut(); // will first fade out the loading animation
+					$('.loader').delay(350).fadeOut(); // will first fade out the loading animation
+					//$('#preloader-page').delay(5800).fadeOut('slow'); // will fade out the white DIV that covers the website.
+					$('#preloader-page').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
 					$('body').delay(350).css({'overflow':'visible'});
 				})
 			//]]>
@@ -224,6 +231,9 @@
 				});
 				$("#BuyerAction").click(function() {
 					$("#BuyerSelect").fadeIn(800);
+				});
+				$("#CSAction").click(function() {
+					$("#CSSelect").fadeIn(800);
 				});
 			});
 
