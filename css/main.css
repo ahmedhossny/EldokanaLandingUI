@@ -135,6 +135,10 @@ body {
 	top:20px;
 	left:0;
 }
+#innerLogo h1 { margin: 20px 0 0px 0;
+color: #FFFFFF;
+text-align: center;
+font-size: 1.5em; }
 /*
 #innerLogo .LogoImg {
 	background-color: #FFFFFF;
@@ -242,12 +246,12 @@ footer {
 	float:left;
 }
 .BuyerContent{
-	margin:195px auto 0 10%;
+	margin:280px auto 0 10%;
 	max-width: 400px;
 }
 
 .CSContent {
-	margin:195px 10% 0 auto;
+	margin:280px 10% 0 auto;
 	max-width: 400px;
 }
 
@@ -475,6 +479,8 @@ background:url("../img/bullets-load.gif") top  center no-repeat transparent;
 	height:23px;
 	position:absolute; bottom:0px; right:70px;
  }	 
+
+
 
 
 /* ==========================================================================
