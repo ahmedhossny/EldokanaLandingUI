@@ -22,19 +22,19 @@
 		<![endif]-->
 
 		<!-- Add your site or application content here -->
-		
+
 		<!-- loader -->
 		<div id="preloader-page">
 			<!-- loader -->
-		    <div class="loader">
-		    	<div class="face"></div>
-		        <div class="bullets"></div>	    
-		    </div>
+			<div class="loader">
+				<div class="face"></div>
+				<div class="bullets"></div>
+			</div>
 		</div>
-		
+
 		<!-- parallax -->
 		<div id="container" class="container">
-			
+
 			<ul id="scene" class="scene">
 				<li class="layer" data-depth="1.00"><img src="img/lrgBG.png">
 				</li>
@@ -60,11 +60,11 @@
 		<div id="EnterDokkana">
 			<div id="innerLogo" class="logo">
 				<a href="#" class="LogoImg">الدكانه</a>
-                <h1>مع الدكانة ممكن تشتري و تبيع من برانز تحبها</h1>
+				<h1>مع الدكانة ممكن تشتري و تبيع من براندز تحبها</h1>
 			</div>
 			<div class="rightContent">
 				<div class="BuyerContent">
-				<!--	<h1>عايز اشتري واكون سعيد</h1> -->
+					<!--	<h1>عايز اشتري واكون سعيد</h1> -->
 					<div class="headTitle">
 						<div class="SmileyFace"></div>
 						<div class="leftCurve">
@@ -107,12 +107,12 @@
 			</div>
 			<div class="leftContent">
 				<div class="CSContent">
-				<!--	<h1>افتح دكانة وأبيع لأصحابي</h1> -->
+					<!--	<h1>افتح دكانة وأبيع لأصحابي</h1> -->
 					<div class="headTitle">
 						<div class="DokkanaIcon"></div>
 						<div class="leftCurve">
 							<div class="rectangle"></div>
-							
+
 							<div class="triContainer">
 								<div class="topTri"></div>
 								<div class="bottomTri"></div>
@@ -151,16 +151,48 @@
 			</div>
 		</div>
 		<div id="BuyerSelect">
-			<div class="logo">
+			<div class="CloseWrapper">
+				<a href="#" class="closeButton">&times;</a>
 				<a href="#" class="LogoImg">الدكانه</a>
 			</div>
-			buyer
+			
+			<h1>عايز تشتري من انهي <span class="RedText">براند</span>؟ </h1>
+			<div class="BrandsContainer">
+				<a href="http://www.facebook.com/Nastrends/app_113845458747423" class="BrandWrapper" target="_blank">
+					<img src="img/nas.png" />
+				</a>
+				<a href="http://www.facebook.com/belaraby.handcrafts/app_113845458747423" class="BrandWrapper" target="_blank">
+					<img src="img/belaraby.png" />
+				</a>
+				<a href="http://www.facebook.com/KAFWEAR/app_113845458747423" class="BrandWrapper" target="_blank">
+					<img src="img/kaf.png" />
+				</a>
+				<a href="http://www.facebook.com/pages/Nabta-world/140156589489792?id=140156589489792&sk=app_113845458747423" class="BrandWrapper" target="_blank">
+					<img src="img/nabta.png" />
+				</a>
+			</div>
 		</div>
 		<div id="CSSelect">
-			<div class="logo">
+			<div class="CloseWrapper">
+				<a href="#" class="closeButton">&times;</a>
 				<a href="#" class="LogoImg">الدكانه</a>
 			</div>
-			CS
+			
+			<h1>عايز تبيع من انهي <span class="RedText">براند</span>؟ </h1>
+			<div class="BrandsContainer">
+				<a href="https://nastrends.eldokkana.com/Home/StarWelcome" class="BrandWrapper" target="_blank">
+					<img src="img/nas.png" />
+				</a>
+				<a href="https://belarabyhandcrafts.eldokkana.com/Home/StarWelcome" class="BrandWrapper" target="_blank">
+					<img src="img/belaraby.png" />
+				</a>
+				<a href="https://kafwear.eldokkana.com/Home/StarWelcome" class="BrandWrapper" target="_blank">
+					<img src="img/kaf.png" />
+				</a>
+				<a href="https://nabtaworld.eldokkana.com/Home/StarWelcome" class="BrandWrapper" target="_blank">
+					<img src="img/nabta.png" />
+				</a>
+			</div>
 		</div>
 
 		<footer>
@@ -211,35 +243,39 @@
 		<script src="js/main.js"></script>
 
 		<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-		<script>
-			( function(b, o, i, l, e, r) {
-					b.GoogleAnalyticsObject = l;
-					b[l] || (b[l] = function() {
-						(b[l].q = b[l].q || []).push(arguments)
-					});
-					b[l].l = +new Date;
-					e = o.createElement(i);
-					r = o.getElementsByTagName(i)[0];
-					e.src = '//www.google-analytics.com/analytics.js';
-					r.parentNode.insertBefore(e, r)
-				}(window, document, 'script', 'ga'));
-			ga('create', 'UA-XXXXX-X');
-			ga('send', 'pageview');
-		</script>
+		<!--<script>
+		( function(b, o, i, l, e, r) {
+		b.GoogleAnalyticsObject = l;
+		b[l] || (b[l] = function() {
+		(b[l].q = b[l].q || []).push(arguments)
+		});
+		b[l].l = +new Date;
+		e = o.createElement(i);
+		r = o.getElementsByTagName(i)[0];
+		e.src = '//www.google-analytics.com/analytics.js';
+		r.parentNode.insertBefore(e, r)
+		}(window, document, 'script', 'ga'));
+		ga('create', 'UA-XXXXX-X');
+		ga('send', 'pageview');
+		</script>-->
 		<!-- Preloader -->
 		<script type="text/javascript">
 			//<![CDATA[
-				$(window).load(function() {
-					 // makes sure the whole site is loaded
-					//$('#preloader-page').delay(100000);
-					//$('.loader').delay(5500).fadeOut(); // will first fade out the loading animation
-					$('.loader').delay(350).fadeOut(); // will first fade out the loading animation
-					//$('#preloader-page').delay(5800).fadeOut('slow'); // will fade out the white DIV that covers the website.
-					$('#preloader-page').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
-					$('body').delay(350).css({'overflow':'visible'});
-				})
+			$(window).load(function() {
+				// makes sure the whole site is loaded
+				//$('#preloader-page').delay(100000);
+				//$('.loader').delay(5500).fadeOut(); // will first fade out the loading animation
+				$('.loader').delay(350).fadeOut();
+				// will first fade out the loading animation
+				//$('#preloader-page').delay(5800).fadeOut('slow'); // will fade out the white DIV that covers the website.
+				$('#preloader-page').delay(350).fadeOut('slow');
+				// will fade out the white DIV that covers the website.
+				$('body').delay(350).css({
+					'overflow' : 'hidden'
+				});
+			})
 			//]]>
-		</script> 
+		</script>
 
 		<script src="js/parallax.js"></script>
 		<!-- Parallax Intialization -->
@@ -274,6 +310,9 @@
 				});
 				$("#CSAction").click(function() {
 					$("#CSSelect").fadeIn(800);
+				});
+				$(".closeButton").click(function() {
+					$(this).parent().parent().fadeOut(800);
 				});
 			});
 
