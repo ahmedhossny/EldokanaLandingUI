@@ -440,18 +440,20 @@ right: 108px;
 }
 
 .CSFeatures ul, .BuyerFeatures ul {
-	background: url('../img/ListStyle.png') repeat-y right top;
+	
 	list-style-position: inside;
 	list-style: none;
 	margin: 0 10px 0 0;
+	padding:10px;
 	
 }
 .CSFeatures ul li, .BuyerFeatures ul li {
-color: #666;
-font-size: 1.2em;
+background: url('../img/ListStyle.png') no-repeat right top;	
+	color: #666;
+	font-size: 1.2em;
 font-weight: 100;
 line-height: 60px;
-padding-right: 20px;
+padding-right: 50px;
 }
 .DbtnBuyer , .DbtnCS{
 position: relative;
