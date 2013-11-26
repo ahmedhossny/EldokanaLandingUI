@@ -221,7 +221,8 @@ footer {
 	left:0;
 }
 .footerContent {
-	width: 1200px;
+	max-width: 1200px;
+	width:100%;
 	margin: 0px auto;
 	color: white; /* just to see test content */
 }
@@ -677,15 +678,68 @@ background:url("../img/bullets-load.gif") top  center no-repeat transparent;
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
+
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1020px) 
+and (max-width : 1224px) {
+/* Styles */
 }
 
-@media print,
-       (-o-min-device-pixel-ratio: 5/4),
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 120dpi) {
-    /* Style adjustments for high resolution devices */
+@media only screen 
+and (min-width : 817px) 
+and (max-width : 1019px) {
+/* Styles */
+.footerContent .menu ul li a .text span { display:none; }
+.footerContent .menu ul li a .text h3 { margin: 22px 0 0; }
+.VidContainer { width:60% }
+.CSContent {
+    margin: 280px auto;
+    max-width: 400px;
+}
+.BuyerContent {
+    margin: 280px auto;
+    max-width: 400px;
+}
+.scene {
+    padding: 150px 0 0;
+ }
+ .closeButton { left: 13%; }
+}
+
+@media only screen 
+and (max-width : 817px) 
+{
+.footerContent .menu ul li a .text { display:none; } .VidContainer { width:70% }
+.rightContent {
+    float: none;
+    width: 100%;
+	height:auto;
+}
+.leftContent {
+    float: none;
+	height:auto;
+    width: 100%;
+}
+body { overflow:scroll !important; }
+.BuyerContent {
+    margin: 280px auto 150px;
+}
+.CSContent {
+    margin: 0px auto 150px;
+}
+.scene {
+    padding: 230px 0 0;
+ }
+  .closeButton { left: 10%; }
+}
+
+@media only screen 
+and (max-width : 410px)  
+{
+	.footerContent .menu ul li a.sf .icon {  margin-top: 10px;    width: 24px; }
+	.footerContent .menu ul li a.sf .icon img { width:100%; }
 }
 
 /* ==========================================================================
