@@ -22,7 +22,8 @@ html {
     font-size: 1em;
     line-height: 1.4;
 }
-
+.right {float:right;}
+.left { float:left; }
 /*
  * Remove text-shadow in selection highlight: h5bp.com/i
  * These selection rule sets have to be separate.
@@ -224,6 +225,35 @@ footer {
 	margin: 0px auto;
 	color: white; /* just to see test content */
 }
+.footerContent .menu {
+	overflow :hidden;
+	}
+.footerContent .menu ul { margin:0; }
+.footerContent .menu ul li { display:inline-block;}
+.footerContent .menu ul li a { padding:17px; display:block; overflow:hidden; background:rgba(255,255,255,0.1); 
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .31s ease; }
+
+.footerContent .menu ul li a:hover { background:rgba(255,255,255,0.2);  }	
+.footerContent .menu ul li a span { display:block; }
+.footerContent .menu ul li a .icon { margin-top:0; 	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease; }
+.footerContent .menu ul li a:hover .icon { margin-top:-5px;}
+.footerContent .menu ul li a .text { margin-right: 10px;}
+.footerContent .menu ul li a .text h3 { font-size: 1.0em;
+color: #fff;
+line-height: 0;
+margin: 12px 0 12px 0; }
+.footerContent .menu ul li a .text span.home {color: #bee3ff;}
+.footerContent .menu ul li a .text span.blog {color: #ffbe96;}
+.footerContent .menu ul li a .text span.feedback {color: #cee9b0;}
+.footerContent .menu ul li a .text span.facebook {color: #7FB5EC;}
 #EnterDokkana {
 	position: absolute;
 	top:0;
